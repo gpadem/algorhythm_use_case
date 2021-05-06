@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+    <h1>Welcome to the magic world of Machine learning Summarizations!</h1>
+    <p>Have a nice {{ day }}!</p>
+
+    <ul>
+      <li><a href="{{ url_for('book_page') }}">Enter the name of the book you want to summarize!</a></li>
+    </ul>
+
+    <ul>
+        <li><a href="{{ url_for('text_page') }}">Paste the text you want to summarize!</a></li>
+    </ul>
+
+{% endblock %}
